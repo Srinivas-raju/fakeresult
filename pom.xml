@@ -6,7 +6,20 @@
   <version>1.0.0</version>
   <name>results</name>
   <url>http://maven.apache.org</url>
-  
+  <distributionManagement>
+    <snapshotRepository>
+      <uniqueVersion>true</uniqueVersion>
+      <id>nexus</id>
+      <name>Snapshots</name>
+      <url>http://54.175.158.45:8081/nexus/content/repositories/snapshots/</url>
+    </snapshotRepository>
+        <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>nexus</id>
+      <name>release</name>
+      <url>http://54.175.158.45:8081/nexus/content/repositories/releases/</url>
+    </repository>
+  </distributionManagement> 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.version>4.12</junit.version>
