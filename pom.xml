@@ -65,7 +65,7 @@
       <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.6.1</version>
+        <version>1.0</version>
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
@@ -74,7 +74,7 @@
       <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-war-plugin -->
       <plugin>
         <artifactId>maven-war-plugin</artifactId>
-        <version>2.4</version>
+        <version>1.0</version>
         <configuration>
           <warName>${project.artifactId}</warName>
           <!--
@@ -86,7 +86,7 @@
       <plugin>
         <groupId>org.apache.tomcat.maven</groupId>
         <artifactId>tomcat7-maven-plugin</artifactId>
-        <version>2.2</version>
+        <version>1.0</version>
       </plugin>
     </plugins>
   </build>
